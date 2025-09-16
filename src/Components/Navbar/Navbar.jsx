@@ -1,5 +1,6 @@
 import './Navbar.css'
 import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
+
 function NavPrincipal() {
 
     const handleOpenNav = (e) =>{
@@ -19,7 +20,7 @@ function NavPrincipal() {
         
         <div className='NavbarResponsive' id='navResponsive'>
             <div className="logoResponsive">
-                <img src="./src/assets/FLYER 2.png" width={250}></img>
+                <img src="../../assets/FLYER 2.png" width={250}></img>
             </div>
         <button data-navactivo="navResponsive" data-objetivo="navContent" className='btnNavResp' onClick={(e) =>{handleOpenNav(e)}}><svg data-navactivo="navResponsive" data-objetivo="navContent" xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 24 24"><path fill="none"  data-navactivo="navResponsive" data-objetivo="navContent" stroke="#fff" strokeLinecap="round" strokeWidth={2} d="M5 7h14M5 12h14M5 17h14"></path></svg></button>
 
@@ -34,7 +35,7 @@ function NavPrincipal() {
                 </ul>
             </div>
             <div className="logo">
-                <img src="./src/assets/FLYER 2.png" width={250}></img>
+                <img src="." width={250}></img>
             </div>
             <div className="redes">
                 <ul>
