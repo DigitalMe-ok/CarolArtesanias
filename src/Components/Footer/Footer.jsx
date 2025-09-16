@@ -6,7 +6,7 @@ function Footer() {
             <VStack spacing={3}>
 
                 <Image
-                    src="../../src/assets/FLYER 2.Png" 
+                    src="/images/FLYER-2.png" 
                     alt="Logo"
                     boxSize="13rem"
                     objectFit="contain"

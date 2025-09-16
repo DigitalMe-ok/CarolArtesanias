@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/react";
-import aboutImage from "../../assets/aboutme.png";
+import aboutImage from "/images/aboutme.png";
 import './About.css'
 function AboutMe() {
     return (

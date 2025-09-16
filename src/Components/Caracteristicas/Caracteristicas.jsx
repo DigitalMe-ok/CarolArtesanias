@@ -26,7 +26,7 @@ function Caracteristicas() {
                         <HStack mb="4" gap="3">
                             <Avatar
                                 name="Nate Foss"
-                                src="../../src/assets/exclusivo.png"
+                                src="/images/exclusivo.png"
                             />
                             <Stack spacing="0">
                                 <Text fontWeight="semibold" fontSize="sm">
@@ -52,7 +52,7 @@ function Caracteristicas() {
                         <HStack mb="4" gap="3">
                             <Avatar
                                 name="Nate Foss"
-                                src="../../src/assets/aprobado.png"
+                                src="/images/aprobado.png"
                             />
                             <Stack spacing="0">
                                 <Text fontWeight="semibold" fontSize="sm">
@@ -78,7 +78,7 @@ function Caracteristicas() {
                         <HStack mb="4" gap="3">
                             <Avatar
                                 name="Nate Foss"
-                                src="../../src/assets/proposito.png"
+                                src="/images/proposito.png"
 
                             />
                             <Stack spacing="0">
