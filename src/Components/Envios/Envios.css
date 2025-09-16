@@ -1,0 +1,91 @@
+.envios {
+  padding: 60px 20px;
+  margin:5rem 0 0 0 ;
+  background-color: #f9f9f9;
+  text-align: center;
+    background-color: #ad9c83;
+  padding: 4rem;
+  border-radius: 5rem 0 5rem 0;
+  text-align: center;
+}
+
+.envios-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.envios-text {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+.envios-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.envio-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.envio-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.envio-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.envio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+.envios-correos {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.correos-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.correos-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.correos-logos img {
+  max-width: 160px;
+  height: 60px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.correos-logos img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Responsive */
+@media (min-width: 768px) {
+  .envios-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
