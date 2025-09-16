@@ -1,5 +1,4 @@
 import { Box, Image, Text, Center } from "@chakra-ui/react";
-import bannerImg from "../../assets/Banner2.png";
 export default function Banner() {
     return (
         <Box
@@ -10,7 +9,7 @@ export default function Banner() {
         >
             <Center w="100%" h="100%">
                 <Image
-                    src={bannerImg}
+                    src={"../../assets/banner"}
                     alt="Banner"
                     maxH="100%"
                     objectFit="contain"
