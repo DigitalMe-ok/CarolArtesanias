@@ -26,7 +26,7 @@ const Map = () => {
           className="rounded-3xl overflow-hidden shadow-2xl"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.759!2d-64.1905!3d-31.4201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3b9f5f5f5f5%3A0x123456789abcdef!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1690000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6810.440285667159!2d-64.22533697656718!3d-31.408060246633042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298961a7becfd%3A0x7ae200182592d0de!2sAlto%20Alberdi%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1762051394402!5m2!1ses-419!2sar"
             width="100%"
             height="500"
             style={{ border: 0 }}

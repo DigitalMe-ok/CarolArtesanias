@@ -4,6 +4,10 @@ import { Star } from 'lucide-react';
 import { featuredProducts } from '../data/products';
 
 const Featured = () => {
+  const askForProd = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: 'smooth' });
+
+  };
   return (
     <section className="py-20 bg-gradient-to-br from-pink-50 to-teal-50">
       <div className="container mx-auto px-4">
@@ -37,7 +41,7 @@ const Featured = () => {
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-purple-600">{product.price}</span>
-                  <button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition-colors">
+                  <button onClick={askForProd} className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition-colors">
                     Comprar Ahora
                   </button>
                 </div>

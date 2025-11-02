@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import fondoOne from "../assets/fondo1.png"
 import fondoTwo from "../assets/fondo2.png"
+import almohadones from "../assets/almohadas.jpeg"
 const Banner = ({ id }) => {
   const images = [
     fondoTwo,
-    fondoOne
+    fondoOne,
+    almohadones
   ];
   const [current, setCurrent] = useState(0);
 

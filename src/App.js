@@ -11,6 +11,7 @@ import Map from './components/Map';
 import Footer from './components/Footer';
 
 const App = () => {
+
   return (
     <div className="min-h-screen">
       <Navbar />

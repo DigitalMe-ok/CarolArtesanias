@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
+  const date = new Date();
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
       <div className="container mx-auto px-4">
@@ -19,7 +20,7 @@ const Footer = () => {
             <div className="flex gap-4">
               <a href="#" className="text-2xl hover:text-pink-400"><Facebook /></a>
               <a href="#" className="text-2xl hover:text-pink-400"><Instagram /></a>
-              <a href="#" className="text-2xl hover:text-pink-400"><Twitter /></a>
+              
             </div>
           </motion.div>
           <motion.div
@@ -42,14 +43,14 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <div className="space-y-2 text-gray-300">
-              <div className="flex items-center gap-2"><Mail className="w-4 h-4" /><span>carolartesanias@gmail.com</span></div>
-              <div className="flex items-center gap-2"><Phone className="w-4 h-4" /><span>+54 351 123-4567</span></div>
+              <div className="flex items-center gap-2"><Mail className="w-4 h-4" /><span>carolartesaniascba@gmail.com</span></div>
+              <div className="flex items-center gap-2"><Phone className="w-4 h-4" /><span>+54 351 614-0868</span></div>
               <div className="flex items-center gap-2"><MapPin className="w-4 h-4" /><span>Córdoba, Argentina</span></div>
             </div>
           </motion.div>
         </div>
         <div className="border-t border-gray-700 pt-8 text-center text-gray-300">
-          <p>&copy; 2024 Carol Artesanías. Hecho con ❤️ en Córdoba, Argentina.</p>
+          <p>&copy; {date.getFullYear()} Carol Artesanías. Hecho con ❤️ en Córdoba, Argentina.</p>
         </div>
       </div>
     </footer>
