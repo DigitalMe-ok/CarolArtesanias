@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c791913c.css",
+    "main.js": "/static/js/main.fab873ef.js",
+    "static/media/fondo2.png": "/static/media/fondo2.a8824552775b41060d4a.png",
+    "static/media/fondo1.png": "/static/media/fondo1.04eb23cf222789cb456f.png",
+    "static/media/Foto2.png": "/static/media/Foto2.8715931e8ed8791c8a73.png",
+    "static/media/Foto6.png": "/static/media/Foto6.72f6d61507b8823d89ba.png",
+    "static/media/Foto4.png": "/static/media/Foto4.dab026ec7ab54db86314.png",
+    "static/media/Foto1.png": "/static/media/Foto1.a3550307d2a34a69bd09.png",
+    "static/media/Foto5.png": "/static/media/Foto5.b80b84de175cbfedbdcf.png",
+    "static/media/Banner2.png": "/static/media/Banner2.eff7eb1b197a15bd7bad.png",
+    "static/media/Foto8.png": "/static/media/Foto8.f03f0a565a5de9b5046b.png",
+    "static/media/Foto9.png": "/static/media/Foto9.2981f6f5f7de1f0d3523.png",
+    "static/media/Foto3.png": "/static/media/Foto3.ffedfb3c6cadceb166d3.png",
+    "static/media/Foto7.png": "/static/media/Foto7.d711d57ff11af79a42f5.png",
+    "static/media/papaNoel.jpeg": "/static/media/papaNoel.6d0ab6699ca1981d1023.jpeg",
+    "static/media/buhoGris.jpeg": "/static/media/buhoGris.8669c563324f482577f8.jpeg",
+    "static/media/almohadas.jpeg": "/static/media/almohadas.01019560b4f1416b293c.jpeg",
+    "static/media/banner.jpg": "/static/media/banner.b6e36bde82849a9a17de.jpg",
+    "static/media/buhoNeg.jpeg": "/static/media/buhoNeg.31e4bd6e86e6ddfd47ef.jpeg",
+    "index.html": "/index.html",
+    "main.c791913c.css.map": "/static/css/main.c791913c.css.map",
+    "main.fab873ef.js.map": "/static/js/main.fab873ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c791913c.css",
+    "static/js/main.fab873ef.js"
+  ]
+}
