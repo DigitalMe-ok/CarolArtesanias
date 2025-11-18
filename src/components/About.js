@@ -1,10 +1,34 @@
 import { motion } from 'framer-motion';
 import { Heart, Palette } from 'lucide-react';
 import about from '../assets/banner.jpg';
+import { useEffect, useState } from 'react';
 const About = () => {
-  return (
-    <section className="py-20 bg-gradient-to-br from-teal-50 to-pink-50">
-      <div className="container mx-auto px-4">
+  const [respAnimation,setRespAnimation] = useState(null)
+  const[pantWidth,setPantWidth] = useState(null)
+  const arregloAnimacion = () =>{
+    let pantalla = window.innerWidth;
+    console.log(pantalla);
+    setPantWidth(pantalla);
+    pantalla <= 1350 ? setRespAnimation(true) 
+    :
+    setRespAnimation(false);
+    
+    
+  }
+  useEffect(() =>{
+      arregloAnimacion();
+      window.addEventListener("resize", (e)=>{
+      arregloAnimacion();})
+      return () => window.addEventListener("resize",(e)=>{
+      arregloAnimacion()})
+    },[""])
+  if(respAnimation === null || pantWidth === null){
+    return <div className='w-screen text-xl text-stone-900'>Cargando...</div>
+  }
+  else{
+return (
+    <section className="py-20 bg-gradient-to-br from-teal-50 to-pink-50 flex justify-center items-center">
+      <div className="container px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,8 +42,8 @@ const About = () => {
         </motion.div>
         <div className="grid md:grid-cols-2 gap-12 items-center ">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{opacity:0,x:-50}}
+            whileInView={{opacity:1,x:0}}
             transition={{ duration: 0.8 }}
           >
             <img
@@ -29,10 +53,18 @@ const About = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{
+              opacity:0,
+              x:respAnimation? 0:50,
+              y:respAnimation?50:0
+            }}
+            whileInView={{
+              opacity:1,
+              x:respAnimation? 0:0,
+              y:respAnimation? 0:0
+            }}
             transition={{ duration: 0.8, delay: 0.2 }}
+
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -68,6 +100,8 @@ const About = () => {
       </div>
     </section>
   );
+  }
+  
 };
 
 export default About;

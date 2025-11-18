@@ -20,7 +20,10 @@ const Products = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-600 mx-auto"></div>
         </motion.div>
         <div className="space-y-10">
-          {Object.entries(categories).map(([category, items]) => (
+          {Object.entries(categories).map(([category, items]) => { 
+            category = category.replaceAll("_"," ")
+            
+            return(
             <motion.div
               key={category}
               initial={{ opacity: 0, y: 50 }}
@@ -36,20 +39,20 @@ const Products = () => {
                     whileHover={{ y: -10, scale: 1.02 }}
                     className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300"
                   >
-                    <img src={product.image} alt={product.name} className="w-full h-100 object-cover rounded-2xl mb-4" />
+                    <img src={product.image} alt={product.name} className="w-full min-h-100 max-h-100 object-cover rounded-2xl mb-4" style={{"minHeight":"300px","maxHeight":"300px"}} />
                     <h4 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h4>
                     <p className="text-gray-600 mb-3">{product.description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-2xl font-bold text-pink-600">{product.price}</span>
-                      <button onClick={askForProd} className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-xl hover:scale-105 transition-transform">
-                        Ver Más
+                      <button title='Ir a la sección de contacto para más información' onClick={askForProd} className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-xl hover:scale-105 transition-transform">
+                        Consultar
                       </button>
                     </div>
                   </motion.div>
                 ))}
               </div>
             </motion.div>
-          ))}
+          )})}
         </div>
       </div>
     </section>

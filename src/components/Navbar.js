@@ -15,7 +15,18 @@ const Navbar = () => {
   ];
 
   const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    console.log("HOLAAAAAAAAAAAAAAAA",id);
+
+    const element = document.getElementById(id);
+    if (element) {
+      const navbar = document.querySelector('nav');
+      const navbarHeight = navbar ? navbar.offsetHeight : 0;
+      const elementPosition = element.offsetTop - navbarHeight;
+      
+      setTimeout(() =>{
+      window.scrollTo({ top: elementPosition,left:0, behavior: 'smooth' });
+      },200)
+    }
     setIsOpen(false);
   };
 
@@ -25,7 +36,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-200/50 shadow-lg"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto ">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <motion.div
@@ -37,7 +48,7 @@ const Navbar = () => {
           </motion.div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => {
               const Icon = link.icon;
               return (
@@ -45,6 +56,8 @@ const Navbar = () => {
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
                   whileHover={{ scale: 1.1, y: -2 }}
+                  title={`Ir a la sección ${link.id}`}
+
                   className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:bg-pink-100/50 hover:text-pink-600 font-medium transition-all duration-300"
                 >
                   <Icon size={18} />
@@ -57,7 +70,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <motion.button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100"
             whileTap={{ scale: 0.95 }}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -68,7 +81,7 @@ const Navbar = () => {
         <motion.div
           initial={false}
           animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
-          className="md:hidden overflow-hidden bg-white/80 border-t border-gray-200"
+          className="lg:hidden overflow-hidden bg-white/80 border-t border-gray-200 z-400"
         >
           <div className="py-4 space-y-2 px-2">
             {navLinks.map((link) => {
@@ -76,9 +89,10 @@ const Navbar = () => {
               return (
                 <motion.button
                   key={link.id}
-                  onClick={() => scrollToSection(link.id)}
+                  onClick={() =>scrollToSection(link.id)}
                   whileHover={{ x: 4 }}
-                  className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left text-gray-700 hover:bg-pink-100 hover:text-pink-600 font-medium"
+                  title={`Ir a la sección ${link.id}`}
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:bg-pink-100/50 hover:text-pink-600 font-medium transition-all duration-300 z-999"
                 >
                   <Icon size={20} />
                   {link.label}

@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import fondoOne from "../assets/fondo1.png"
-import fondoTwo from "../assets/fondo2.png"
+import fondoOne from "../assets/bannerColgantes.png"
+import fondoTwo from "../assets/bannerDecoHogar.png"
 import almohadones from "../assets/almohadas.jpeg"
+import fondothree from "../assets/productoBanner.jpeg"
 const Banner = ({ id }) => {
   const images = [
     fondoTwo,
     fondoOne,
-    almohadones
+    almohadones,
+    fondothree
   ];
   const [current, setCurrent] = useState(0);
 
@@ -44,6 +46,7 @@ const Banner = ({ id }) => {
             Donde cada pieza cuenta una historia hecha con manos cordobesas y corazón artesanal.
           </p>
           <button
+            title='Ir a productos'
             onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-gradient-to-r from-pink-300 to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
           >
@@ -52,12 +55,14 @@ const Banner = ({ id }) => {
         </motion.div>
       </div>
       <button
+      title='Imagen previa'
         onClick={() => setCurrent((prev) => (prev - 1 + images.length) % images.length)}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full"
       >
         <ArrowLeft size={24} />
       </button>
       <button
+      title='Imagen siguiente'
         onClick={() => setCurrent((prev) => (prev + 1) % images.length)}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full"
       >
@@ -66,6 +71,7 @@ const Banner = ({ id }) => {
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, idx) => (
           <button
+            title={`Ir a la imágen ${idx + 1}`}
             key={idx}
             onClick={() => setCurrent(idx)}
             className={`w-3 h-3 rounded-full ${current === idx ? 'bg-white' : 'bg-white/50'}`}
