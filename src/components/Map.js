@@ -33,7 +33,7 @@ const Map = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            aria_label="Mapa de Córdoba, Argentina"
+            aria-label="Mapa de Córdoba, Argentina"
           />
         </motion.div>
       </div>

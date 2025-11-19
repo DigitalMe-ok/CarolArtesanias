@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.07a05dae.css",
-    "main.js": "/static/js/main.359f6302.js",
+    "main.css": "/static/css/main.9ce4862a.css",
+    "main.js": "/static/js/main.f148f25a.js",
     "static/media/bannerDecoHogar.png": "/static/media/bannerDecoHogar.f54ff27ebcf609af4b4f.png",
     "static/media/bannerColgantes.png": "/static/media/bannerColgantes.874de7c9a79d7489ada9.png",
     "static/media/Banner2.png": "/static/media/Banner2.eff7eb1b197a15bd7bad.png",
@@ -24,12 +24,13 @@
     "static/media/buhoNeg.jpeg": "/static/media/buhoNeg.31e4bd6e86e6ddfd47ef.jpeg",
     "static/media/decoracionInf2.jpeg": "/static/media/decoracionInf2.ade6b3872c3737eb3b2e.jpeg",
     "static/media/munieco1.jpeg": "/static/media/munieco1.16778f41287b348b6895.jpeg",
+    "static/media/logoDM.png": "/static/media/logoDM.fd1616402bb76f5928c0.png",
     "index.html": "/index.html",
-    "main.07a05dae.css.map": "/static/css/main.07a05dae.css.map",
-    "main.359f6302.js.map": "/static/js/main.359f6302.js.map"
+    "main.9ce4862a.css.map": "/static/css/main.9ce4862a.css.map",
+    "main.f148f25a.js.map": "/static/js/main.f148f25a.js.map"
   },
   "entrypoints": [
-    "static/css/main.07a05dae.css",
-    "static/js/main.359f6302.js"
+    "static/css/main.9ce4862a.css",
+    "static/js/main.f148f25a.js"
   ]
 }

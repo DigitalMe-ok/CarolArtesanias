@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-
+import logoDM from "../assets/logoDM.png"
 const Footer = () => {
   const date = new Date();
     const [respAnimation,setRespAnimation] = useState(null)
@@ -48,8 +48,8 @@ const Footer = () => {
               Creaciones únicas hechas con pasión en Córdoba. Cada pieza es un pedacito de alma artesanal.
             </p>
             <div className="flex gap-4">
-              <a aria_label="Ir al Facebook" href="" className="text-2xl hover:text-pink-400"><Facebook /></a>
-              <a aria_label="Ir al Instagram" href="https://www.instagram.com/carol_artesanias_" className="text-2xl hover:text-pink-400"><Instagram /></a>
+              <a aria-label="Ir al Facebook" href="" className="text-2xl hover:text-pink-400"><Facebook /></a>
+              <a aria-label="Ir al Instagram" href="https://www.instagram.com/carol_artesanias_" className="text-2xl hover:text-pink-400"><Instagram /></a>
               
             </div>
           </motion.div>
@@ -60,10 +60,10 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold mb-4">Mapa del Sitio</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a aria_label="Ir a la sección inicial" href="#home" className="hover:text-pink-400">Inicio</a></li>
-              <li><a aria_label="Ir a la sección nosotros" href="#about" className="hover:text-pink-400">Nosotros</a></li>
-              <li><a aria_label="Ir a la sección de productos" href="#products" className="hover:text-pink-400">Productos</a></li>
-              <li><a aria_label='Ir a la sección de contacto' href="#contact" className="hover:text-pink-400">Contacto</a></li>
+              <li><a aria-label="Ir a la sección inicial" href="#home" className="hover:text-pink-400">Inicio</a></li>
+              <li><a aria-label="Ir a la sección nosotros" href="#about" className="hover:text-pink-400">Nosotros</a></li>
+              <li><a aria-label="Ir a la sección de productos" href="#products" className="hover:text-pink-400">Productos</a></li>
+              <li><a aria-label='Ir a la sección de contacto' href="#contact" className="hover:text-pink-400">Contacto</a></li>
             </ul>
           </motion.div>
           <motion.div
@@ -87,10 +87,14 @@ const Footer = () => {
             </div>
           </motion.div>
         </div>
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-300">
-          <p>&copy; {date.getFullYear()} Carol Artesanías. Hecho con ❤️ en Córdoba, Argentina.</p>
+
+        <div className="border-t border-gray-700 pt-8 text-center text-gray-300 flex flex-row justify-evenly items-center">
+          <a aria-label='' href='https://digitalme.com.ar' className='flex flex-col items-center text-center '><img alt='logo dm' src={logoDM} className='h-20 '></img></a>
+          <p>&copy; {date.getFullYear()} Carol Artesanias.</p>
         </div>
       </div>
+
+
     </footer>
   );
 }
