@@ -44,7 +44,7 @@ const Products = () => {
                     <p className="text-gray-600 mb-3">{product.description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-2xl font-bold text-pink-600">{product.price}</span>
-                      <button title='Ir a la sección de contacto para más información' onClick={askForProd} className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-xl hover:scale-105 transition-transform">
+                      <button aria_label='Ir a la sección de contacto para más información' onClick={askForProd} className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-xl hover:scale-105 transition-transform">
                         Consultar
                       </button>
                     </div>

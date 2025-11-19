@@ -157,7 +157,7 @@ const Contact = () => {
                 required
               />
               <button
-              title='Enviar fomulario'
+              aria_label='Enviar fomulario'
                 type="submit"
                 className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 rounded-2xl font-bold text-lg hover:shadow-xl transition-all"
               >
@@ -183,8 +183,8 @@ const Contact = () => {
 
             {/* REDES */}
             <div className="flex gap-4 justify-center pt-8 border-t border-gray-200">
-              <a title="Ir al Facebook" href="#" className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700"><Facebook size={20} /></a>
-              <a title="Ir al Instagram" href="#" className="p-3 bg-pink-600 text-white rounded-full hover:bg-pink-700"><Instagram size={20} /></a>
+              <a aria_label="Ir al Facebook" href="" className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700"><Facebook size={20} /></a>
+              <a aria_label="Ir al Instagram" href="https://www.instagram.com/carol_artesanias_" className="p-3 bg-pink-600 text-white rounded-full hover:bg-pink-700"><Instagram size={20} /></a>
               
             </div>
           </motion.div>
@@ -212,7 +212,7 @@ const Contact = () => {
 
       {/* WHATSAPP */}
       <motion.a
-      title='Link al chat para consultas'
+      aria_label='Link al chat para consultas'
         href="https://wa.me/543516140868"
         target="_blank"
         rel="noopener noreferrer"

@@ -48,8 +48,8 @@ const Footer = () => {
               Creaciones únicas hechas con pasión en Córdoba. Cada pieza es un pedacito de alma artesanal.
             </p>
             <div className="flex gap-4">
-              <a title="Ir al Facebook" href="#" className="text-2xl hover:text-pink-400"><Facebook /></a>
-              <a title="Ir al Instagram" href="#" className="text-2xl hover:text-pink-400"><Instagram /></a>
+              <a aria_label="Ir al Facebook" href="" className="text-2xl hover:text-pink-400"><Facebook /></a>
+              <a aria_label="Ir al Instagram" href="https://www.instagram.com/carol_artesanias_" className="text-2xl hover:text-pink-400"><Instagram /></a>
               
             </div>
           </motion.div>
@@ -60,10 +60,10 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold mb-4">Mapa del Sitio</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a title="Ir a la sección inicial" href="#home" className="hover:text-pink-400">Inicio</a></li>
-              <li><a title="Ir a la sección nosotros" href="#about" className="hover:text-pink-400">Nosotros</a></li>
-              <li><a title="Ir a la sección de productos" href="#products" className="hover:text-pink-400">Productos</a></li>
-              <li><a title='Ir a la sección de contacto' href="#contact" className="hover:text-pink-400">Contacto</a></li>
+              <li><a aria_label="Ir a la sección inicial" href="#home" className="hover:text-pink-400">Inicio</a></li>
+              <li><a aria_label="Ir a la sección nosotros" href="#about" className="hover:text-pink-400">Nosotros</a></li>
+              <li><a aria_label="Ir a la sección de productos" href="#products" className="hover:text-pink-400">Productos</a></li>
+              <li><a aria_label='Ir a la sección de contacto' href="#contact" className="hover:text-pink-400">Contacto</a></li>
             </ul>
           </motion.div>
           <motion.div

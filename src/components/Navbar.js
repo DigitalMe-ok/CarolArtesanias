@@ -56,7 +56,7 @@ const Navbar = () => {
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
                   whileHover={{ scale: 1.1, y: -2 }}
-                  title={`Ir a la sección ${link.id}`}
+                  aria_label={`Ir a la sección ${link.id}`}
 
                   className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:bg-pink-100/50 hover:text-pink-600 font-medium transition-all duration-300"
                 >
@@ -91,7 +91,7 @@ const Navbar = () => {
                   key={link.id}
                   onClick={() =>scrollToSection(link.id)}
                   whileHover={{ x: 4 }}
-                  title={`Ir a la sección ${link.id}`}
+                  aria_label={`Ir a la sección ${link.id}`}
                   className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:bg-pink-100/50 hover:text-pink-600 font-medium transition-all duration-300 z-999"
                 >
                   <Icon size={20} />

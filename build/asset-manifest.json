@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.07a05dae.css",
-    "main.js": "/static/js/main.95efcdfe.js",
+    "main.js": "/static/js/main.359f6302.js",
     "static/media/bannerDecoHogar.png": "/static/media/bannerDecoHogar.f54ff27ebcf609af4b4f.png",
     "static/media/bannerColgantes.png": "/static/media/bannerColgantes.874de7c9a79d7489ada9.png",
     "static/media/Banner2.png": "/static/media/Banner2.eff7eb1b197a15bd7bad.png",
@@ -26,10 +26,10 @@
     "static/media/munieco1.jpeg": "/static/media/munieco1.16778f41287b348b6895.jpeg",
     "index.html": "/index.html",
     "main.07a05dae.css.map": "/static/css/main.07a05dae.css.map",
-    "main.95efcdfe.js.map": "/static/js/main.95efcdfe.js.map"
+    "main.359f6302.js.map": "/static/js/main.359f6302.js.map"
   },
   "entrypoints": [
     "static/css/main.07a05dae.css",
-    "static/js/main.95efcdfe.js"
+    "static/js/main.359f6302.js"
   ]
 }

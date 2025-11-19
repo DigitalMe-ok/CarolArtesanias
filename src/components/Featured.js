@@ -41,7 +41,7 @@ const Featured = () => {
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-purple-600">{product.price}</span>
-                  <button title='Ir a contacto para consultar acerca de este producto.' onClick={askForProd} className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition-colors">
+                  <button aria_label='Ir a contacto para consultar acerca de este producto.' onClick={askForProd} className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition-colors">
                     Consultar
                   </button>
                 </div>
