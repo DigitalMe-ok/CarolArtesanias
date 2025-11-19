@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://carolartesanias.com.ar/sitemap.xml
