@@ -5,8 +5,10 @@ import fondoOne from "../assets/bannerColgantes.png"
 import fondoTwo from "../assets/bannerDecoHogar.png"
 import almohadones from "../assets/almohadas.jpeg"
 import fondothree from "../assets/productoBanner.jpeg"
+import fondoNavidad from "../assets/bannerNavidad.jpeg"
 const Banner = ({ id }) => {
   const images = [
+    fondoNavidad,
     fondoTwo,
     fondoOne,
     almohadones,
@@ -32,7 +34,7 @@ const Banner = ({ id }) => {
         transition={{ duration: 1 }}
         style={{ backgroundImage: `url(${images[current]})` }}
       />
-      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+      <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
         <motion.div
           className="text-center text-white px-4"
           initial={{ y: 50, opacity: 0 }}

@@ -12,9 +12,14 @@ import buhoGris from "../assets/buhoGris.jpeg";
 import almohadaBuho from "../assets/Foto9.png";
 import brujitas from "../assets/brujitas.jpeg"
 import munieco from "../assets/munieco1.jpeg";
-import decoInf from "../assets/decoracionInf.jpeg"
-import decoInf2 from "../assets/decoracionInf2.jpeg"
-
+import decoInf from "../assets/decoracionInf.jpeg";
+import decoInf2 from "../assets/decoracionInf2.jpeg";
+import muniecoNavidenio from "../assets/muniecoNavidenio.png";
+import muniecoNavidenio2 from "../assets/muiecosNavidenios1.png";
+import papaNoel2 from "../assets/muniecoPapaNoel.png";
+import decoracionNavidenia from "../assets/decoracionNavinenia.png";
+import decoracionNavidenia2 from "../assets/decoracionNavidenia2.png";
+import arbolitosDeNavidad from "../assets/arbolitosNavida.png";
 export const categories = {
   DecoHogar: [
     { id: 1, name: "Colgante Estrella Lunar", image: colganteOne, description: "" },
@@ -37,7 +42,12 @@ export const categories = {
 
   ],
   Especiales_de_temporada: [
-    { id: 13, name: "Decoración de temporada", image: brujitas, description: "Muñequitas de tela para la decoración del hogar." },
+    { id: 1,  image: arbolitosDeNavidad },
+    { id: 2,  image: muniecoNavidenio2 },
+    { id: 3,  image: muniecoNavidenio },
+    { id: 4,  image: papaNoel2 },
+    { id: 5,  image: decoracionNavidenia },
+    { id: 6,  image: decoracionNavidenia2 },
     
     // { id: 11, name: "Escultura Pequeña", price: "$550", image: "https://via.placeholder.com/300x300/8B4513/FFFFFF?text=Escultura", description: "Detalles finos en madera reciclada." }
   ]
@@ -45,6 +55,6 @@ export const categories = {
 
 export const featuredProducts = [
   { id: 1, name: "DecoHogar", image: cuadroUno, description: "Base para platos." },
-  { id: 3, name: "Ediciones Especiales", image: papaNoel, description: "Decorción navideña." },
+  { id: 3, name: "Ediciones Especiales", image: brujitas, description: "Decorción de hallowen." },
   { id: 5, name: "DecoHogar", image: cuadroTres, description: "Guarda cubiertos." }
 ];
