@@ -27,7 +27,7 @@ const About = () => {
   }
   else{
 return (
-    <section className="py-20 bg-gradient-to-br from-teal-50 to-pink-50 flex justify-center items-center">
+    <section className="py-20 bg-gradient-to-br from-teal-50 to-pink-50 flex justify-center items-center" style={{"backgroundColor": "#D3CDD7"}}>
       <div className="container px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

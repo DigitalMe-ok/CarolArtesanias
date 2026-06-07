@@ -9,7 +9,7 @@ const Products = () => {
 
   };
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 "style={{"backgroundColor": "#D3CDD7"}}>
       <div className="container mx-auto px-4 ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

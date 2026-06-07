@@ -20,6 +20,7 @@ import papaNoel2 from "../assets/muniecoPapaNoel.png";
 import decoracionNavidenia from "../assets/decoracionNavinenia.png";
 import decoracionNavidenia2 from "../assets/decoracionNavidenia2.png";
 import arbolitosDeNavidad from "../assets/arbolitosNavida.png";
+import imagenCajon from "../assets/imagenCajon.avif"
 export const categories = {
   DecoHogar: [
     { id: 1, name: "Colgante Estrella Lunar", image: colganteOne, description: "" },
@@ -38,8 +39,8 @@ export const categories = {
     { id: 10, name: "Almohadón búho", image: almohadaBuho, description: "" },
     { id: 11, name: "Muñeco de tela", image: munieco, description: "Decoración infantil ideal para los más pequeños." },
     { id: 12, name: "Posa lapices", image: decoInf2, description: "Un posa lápices ideal para los más pequeños." },
-    { id: 13, name: "Cuadro Vive y Rie", image: decoInf, description: "Cartel decorativo pintado en tonos vibrantes con la frase “Vive y Ríe”, ideal para colgar o apoyar en estantes, entradas o rincones especiales del hogar." }
-
+    { id: 13, name: "Cuadro Vive y Rie", image: decoInf, description: "Cartel decorativo pintado en tonos vibrantes con la frase “Vive y Ríe”, ideal para colgar o apoyar en estantes, entradas o rincones especiales del hogar." },
+    { id: 14, name: "Cajon artesanal.", image: imagenCajon, description: "Caja artesanal realizada en madera de pino, pintada a mano con acrílicos y terminada con una técnica de efecto envejecido que le aporta un estilo rústico y vintage. Ideal para decorar, organizar pequeños objetos o regalar un detalle único que combine funcionalidad y encanto artesanal." }
   ],
   Especiales_de_temporada: [
     { id: 1,  image: arbolitosDeNavidad },
